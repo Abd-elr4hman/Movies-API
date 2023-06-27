@@ -3,7 +3,7 @@
 
 ## Goals:
 * [x] Build API to create, read, update and delete data from a mysql database.
-* [x] Implement pagination, sorting and filtering for get endpoints.
+* [x] Implement pagination, sorting and filtering for get endpoint.
 
 ## Requirments:
 - Symfony 6.0^
