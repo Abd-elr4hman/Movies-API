@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+
 use App\Entity\Movie;
 use App\Repository\MovieRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -27,21 +28,6 @@ class MoviesController extends AbstractController
         $title= $request->query->get('title');
         $releaseYear= $request->query->get('releaseYear');
 
-        // if (isset($page)) {
-        //     // get all movies paginated
-        //     $movies = $movieRepository->findAllPaginated($page);
-            
-        // } elseif ($order) {
-        //     // get all movies
-        //     $movies = $movieRepository->findBy([], ["releaseYear" => $order]);
-            
-        // } elseif  ($title) {
-        //     // get all movies
-        //     $movies = $movieRepository->findBy(["title"=>$title]);
-            
-        // }else {
-        //     $movies = $movieRepository->findAll();
-        // }
 
         // filters
         $filters = array();
